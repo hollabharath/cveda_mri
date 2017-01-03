@@ -1,3 +1,3 @@
 Acquisition centres run this custom de-identification script for
-[Dicom Editor](http://mircwiki.rsna.org/index.php?title=DicomEditor)
+[DicomEditor](http://mircwiki.rsna.org/index.php?title=DicomEditor)
 on DICOM files to anonymize them before uploading to the c-VEDA server.
