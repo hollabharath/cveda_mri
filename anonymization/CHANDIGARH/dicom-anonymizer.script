@@ -14,19 +14,19 @@
  <e en="F" t="00080014" n="InstanceCreatorUID">@hashuid(@UIDROOT,this)</e>
  <e en="F" t="00080016" n="SOPClassUID">@keep()</e>
  <e en="F" t="00080018" n="SOPInstanceUID">@hashuid(@UIDROOT,this)</e>
- <e en="F" t="00080020" n="StudyDate">@hashdate(this,PatientID)</e>
- <e en="F" t="00080021" n="SeriesDate">@empty()</e>
- <e en="F" t="00080022" n="AcquisitionDate">@empty()</e>
- <e en="F" t="00080023" n="ContentDate">@hashdate(this,PatientID)</e>
- <e en="F" t="00080024" n="OverlayDate">@empty()</e>
- <e en="F" t="00080025" n="CurveDate">@empty()</e>
- <e en="F" t="0008002a" n="AcquisitionDatetime">@empty()</e>
- <e en="F" t="00080030" n="StudyTime">@empty()</e>
- <e en="F" t="00080031" n="SeriesTime">@empty()</e>
- <e en="F" t="00080032" n="AcquisitionTime">@empty()</e>
- <e en="F" t="00080033" n="ContentTime">@empty()</e>
- <e en="F" t="00080034" n="OverlayTime">@empty()</e>
- <e en="F" t="00080035" n="CurveTime">@empty()</e>
+ <e en="F" t="00080020" n="StudyDate"></e>
+ <e en="F" t="00080021" n="SeriesDate"></e>
+ <e en="F" t="00080022" n="AcquisitionDate"></e>
+ <e en="F" t="00080023" n="ContentDate"></e>
+ <e en="F" t="00080024" n="OverlayDate"></e>
+ <e en="F" t="00080025" n="CurveDate"></e>
+ <e en="F" t="0008002a" n="AcquisitionDatetime"></e>
+ <e en="F" t="00080030" n="StudyTime"></e>
+ <e en="F" t="00080031" n="SeriesTime"></e>
+ <e en="F" t="00080032" n="AcquisitionTime"></e>
+ <e en="F" t="00080033" n="ContentTime"></e>
+ <e en="F" t="00080034" n="OverlayTime"></e>
+ <e en="F" t="00080035" n="CurveTime"></e>
  <e en="F" t="00080050" n="AccessionNumber">@hash(this,16)</e>
  <e en="F" t="00080052" n="QueryRetrieveLevel"></e>
  <e en="F" t="00080054" n="RetrieveAET"></e>
@@ -55,7 +55,7 @@
  <e en="F" t="0008010c" n="PrivateCodingSchemeCreatorUID">@hashuid(@UIDROOT,this)</e>
  <e en="F" t="0008010d" n="CodeSetExtensionCreatorUID">@hashuid(@UIDROOT,this)</e>
  <e en="F" t="0008010f" n="ContextIdentifier"></e>
- <e en="F" t="00080201" n="TimezoneOffsetFromUTC">@empty()</e>
+ <e en="F" t="00080201" n="TimezoneOffsetFromUTC">@keep()</e>
  <e en="F" t="00081010" n="StationName">@empty()</e>
  <e en="F" t="00081030" n="StudyDescription">@keep()</e>
  <e en="F" t="00081032" n="ProcedureCodeSeq"></e>
@@ -128,7 +128,7 @@
  <e en="F" t="00089215" n="DerivationCodeSeq"></e>
  <e en="F" t="00089237" n="RefGrayscalePresentationStateSeq"></e>
  <e en="T" t="00100010" n="PatientName">@empty()</e>
- <e en="F" t="00100020" n="PatientID"></e>
+ <e en="T" t="00100020" n="PatientID">@keep()</e>
  <e en="T" t="00100021" n="IssuerOfPatientID">@empty()</e>
  <e en="T" t="00100030" n="PatientBirthDate">@empty()</e>
  <e en="T" t="00100032" n="PatientBirthTime">@empty()</e>
