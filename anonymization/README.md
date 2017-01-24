@@ -12,18 +12,23 @@ de-identification scripts to anonymize DICOM files before uploading them to the 
 #### `MYSURU_NIMHANS`
 
 Script for NIMHANS and MYSURU.
+* Strangely anough, all the following DICOM tags are emptied. I don't know where we are supposed to find PSC1!
+  * (0010,0020) _PatientID_,
+  * (0010,4000) _PatientComments_,
+  * (0020,4000) _ImageComments_,
+  * (0040,0280) _CommentsOnPerformedProcedureStep_,
 
 #### `CHANDIGARH_00100020_PatientID`
 
 Specific script for CHANDIGARH.
-* Eventually DICOM tag (0010,0020) _PatientID_ appears to contain PSC1. Do not erase it anymore.
+* Eventually DICOM tag (0010,0020) _PatientID_ appears to contain PSC1. Do not empty it anymore.
 
 ### 2017-01-04 14:19:28 UTC
 
 #### `2017-01-04`
 
-* Updated to empty DICOM tag (0010,0020) _PatientID_.
-* The PSC1 code is now to be found in DICOM tag:
+* Empty DICOM tag (0010,0020) _PatientID_.
+* The PSC1 code is supposed to be found in DICOM tag:
   * (0020,4000) _ImageComments_ at NIMHANS,
   * perhaps (0010,21B0) _AdditionalPatientHistory_ at CHANDIGARH,
   * perhaps (0040,0280) _CommentsOnPerformedProcedureStep_ at MYSURU.
@@ -34,8 +39,7 @@ Specific script for CHANDIGARH.
 
 Initial script for all acquistion centres.
 * Mostly changes all occurrences of function `@empty()` into `@remove()`.
-  Now original DICOM tags are not totally removed.
-  Rather their contents are blanked out.
+  Now original DICOM tags are not totally removed. Rather their contents are emptied.
 
 ### 2016-06-29 20:07:30 UTC
 
