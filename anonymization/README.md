@@ -12,6 +12,16 @@ anonymization scripts were distributed via mail (or otherwise committed to GitHu
 
 __________
 
+### 2017-01-24 — 15:37:39 UTC
+
+#### `MYSURU_NIMHANS_00104000_PatientComments`
+
+Script for NIMHANS and MYSURU.
+* In the latest DICOM dataset from NIMHANS acquired on 2017-01-19, the PSC1
+  code is in DICOM tag (0010,4000) _PatientComments_. Do not empty anymore.
+
+__________
+
 ### 2017-01-04 — 15:58:57 UTC
 
 * Date and time are not erased anymore:
