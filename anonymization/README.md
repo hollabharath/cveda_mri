@@ -1,5 +1,7 @@
-Acquisition centres run these [DicomEditor](http://mircwiki.rsna.org/index.php?title=DicomEditor)
-de-identification scripts to anonymize DICOM files before uploading them to the c-VEDA server.
+Acquisition centres run [DicomEditor][1] de-identification scripts to anonymize DICOM files
+before uploading them to the c-VEDA server.
+
+The syntax of these scripts is described in the [MIRC DICOM Anonymizer][2] page.
 
 History
 =======
@@ -13,7 +15,7 @@ __________
 ### 2017-01-04 — 15:58:57 UTC
 
 * Date and time are not erased anymore:
-  * Time of acqusition might be [needed for processing resting state fMRI][1].
+  * Time of acqusition might be [needed for processing resting state fMRI][3].
   * Date of DICOM files can be cross-checked against date of acquisition when uploading to databank.
 
 #### `2017-01-04_MYSURU_NIMHANS`
@@ -62,4 +64,6 @@ Initial script for all acquisition centres.
 * At this point DICOM tag (0010,0020) _PatientID_ is not removed. It is suposed to contain PSC1.
 * DICOM tags (0010,4000) _PatientComments_ and (0020,4000) _ImageComments_ are removed.
 
-[1]: http://jpn.ca/vol38-issue2/38-2-84/
+[1]: http://mircwiki.rsna.org/index.php?title=DicomEditor
+[2]: http://mircwiki.rsna.org/index.php?title=The_MIRC_DICOM_Anonymizer
+[3]: http://jpn.ca/vol38-issue2/38-2-84/
