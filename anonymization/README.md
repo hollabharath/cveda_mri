@@ -4,6 +4,10 @@ de-identification scripts to anonymize DICOM files before uploading them to the 
 History
 =======
 
+Since initial versions of the anoymization script were distributed by mail instead of being versioned,
+here is a brief history of all successive versions of the script. Dates and times refer to the moment
+anonymization scripts were distributed via mail (or otherwise committed to GitHub for newer versions).
+
 __________
 
 ### 2017-01-04 — 15:58:57 UTC
