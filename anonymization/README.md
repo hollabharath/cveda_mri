@@ -12,7 +12,7 @@ __________
   * Time of acqusition might be [needed for processing resting state fMRI][1].
   * Date of DICOM files can be cross-checked against date of acquisition when uploading to databank.
 
-#### `MYSURU_NIMHANS`
+#### `2017-01-04_MYSURU_NIMHANS`
 
 Script for NIMHANS and MYSURU.
 * I don't know where to look for PSC1. Strangely enough, all the following DICOM tags are emptied!
