@@ -12,7 +12,7 @@ de-identification scripts to anonymize DICOM files before uploading them to the 
 #### `MYSURU_NIMHANS`
 
 Script for NIMHANS and MYSURU.
-* Strangely anough, all the following DICOM tags are emptied. I don't know where we are supposed to find PSC1!
+* I don't know where to look for PSC1. Strangely enough, all the following DICOM tags are emptied!
   * (0010,0020) _PatientID_,
   * (0010,4000) _PatientComments_,
   * (0020,4000) _ImageComments_,
