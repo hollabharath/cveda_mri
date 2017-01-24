@@ -28,7 +28,7 @@ __________
   * Time of acqusition might be [needed for processing resting state fMRI][3].
   * Date of DICOM files can be cross-checked against date of acquisition when uploading to databank.
 
-#### `2017-01-04_MYSURU_NIMHANS`
+#### `archives/2017-01-04_MYSURU_NIMHANS`
 
 Script for NIMHANS and MYSURU.
 * I don't know where to look for PSC1. Strangely enough, all the following DICOM tags are emptied!
@@ -46,7 +46,7 @@ __________
 
 ### 2017-01-04 — 14:19:28 UTC
 
-#### `2017-01-04`
+#### `archives/2017-01-04`
 
 * Empty DICOM tag (0010,0020) _PatientID_.
 * The PSC1 code is supposed to be found in DICOM tag:
@@ -58,7 +58,7 @@ __________
 
 ### 2016-10-04 — 17:38:59 UTC
 
-#### `2016-10-04`
+#### `archives/2016-10-04`
 
 Initial script for all acquistion centres.
 * Mostly changes all occurrences of function `@empty()` into `@remove()`.
@@ -68,7 +68,7 @@ __________
 
 ### 2016-06-29 — 20:07:30 UTC
 
-#### `2016-06-29`
+#### `archives/2016-06-29`
 
 Initial script for all acquisition centres.
 * At this point DICOM tag (0010,0020) _PatientID_ is not removed. It is suposed to contain PSC1.
