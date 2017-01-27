@@ -1,1 +1,1 @@
-MRI protocoles used by c-VEDA acquisition centres.
+MRI protocols used by c-VEDA acquisition centres.
