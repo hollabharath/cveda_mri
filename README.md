@@ -2,9 +2,8 @@ Detailed imaging operations are documented in the c-VEDA MRI Standard Operating 
 
 * `protocols`
 
-  MRI protocols used by each acquisiton centres, in the form of an EDX file for Siemens scanners
-  and an ExamCard for Philips scanner. A human-readable export in PDF format is also provided when
-  possible.
+  MRI protocols used by each acquisiton centres, when possible in the form of an EDX file for Siemens
+  scanners and an ExamCard for Philips scanner, and as a human-readable export in PDF or text format.
 
 * `anonymization`
 
