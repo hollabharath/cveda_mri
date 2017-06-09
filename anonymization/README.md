@@ -46,7 +46,7 @@ __________
 
 ### 2017-01-04 — 14:19:28 UTC
 
-#### `archives/2017-01-04`
+#### `archives/2017-01-04`
 
 * Empty DICOM tag (0010,0020) _PatientID_.
 * The PSC1 code is supposed to be found in DICOM tag:
