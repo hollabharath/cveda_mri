@@ -1,5 +1,7 @@
 Detailed imaging operations are documented in the c-VEDA MRI Standard Operating Procedure (SOP).
 
+Basic information is available from the [project wiki](https://github.com/cveda/cveda_mri/wiki).
+
 * `protocols`
 
   MRI protocols used by each acquisiton centres, when possible in the form of an EDX file for Siemens
