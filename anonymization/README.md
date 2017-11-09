@@ -12,6 +12,14 @@ anonymization scripts were distributed via mail (or otherwise committed to GitHu
 
 __________
 
+### 2017-11-07 — 05:55:55 UTC
+
+#### `NIMHANS_00081500_AttendingPhysiciansName`
+
+Script for the Philips scanner at NIMHANS.
+
+__________
+
 ### 2017-01-24 — 15:37:39 UTC
 
 #### `MYSURU_NIMHANS_00104000_PatientComments`
