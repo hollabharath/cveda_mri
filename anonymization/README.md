@@ -22,9 +22,9 @@ __________
 
 ### 2017-01-24 — 15:37:39 UTC
 
-#### `MYSURU_NIMHANS_00104000_PatientComments`
+#### `MYSORE_NIMHANS_00104000_PatientComments`
 
-Script for NIMHANS and MYSURU.
+Script for NIMHANS and MYSORE.
 * In the latest DICOM dataset from NIMHANS acquired on 2017-01-19, the PSC1
   code is in DICOM tag (0010,4000) _PatientComments_. Do not empty anymore.
 
@@ -36,9 +36,9 @@ __________
   * Time of acqusition might be [needed for processing resting state fMRI][3].
   * Date of DICOM files can be cross-checked against date of acquisition when uploading to databank.
 
-#### `archives/2017-01-04_MYSURU_NIMHANS`
+#### `archives/2017-01-04_MYSORE_NIMHANS`
 
-Script for NIMHANS and MYSURU.
+Script for NIMHANS and MYSORE.
 * I don't know where to look for PSC1. Strangely enough, all the following DICOM tags are emptied!
   * (0010,0020) _PatientID_,
   * (0010,4000) _PatientComments_,
@@ -60,7 +60,7 @@ __________
 * The PSC1 code is supposed to be found in DICOM tag:
   * (0020,4000) _ImageComments_ at NIMHANS,
   * perhaps (0010,21B0) _AdditionalPatientHistory_ at CHANDIGARH,
-  * perhaps (0040,0280) _CommentsOnPerformedProcedureStep_ at MYSURU.
+  * perhaps (0040,0280) _CommentsOnPerformedProcedureStep_ at MYSORE.
 
 __________
 
