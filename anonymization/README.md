@@ -12,9 +12,29 @@ anonymization scripts were distributed via mail (or otherwise committed to GitHu
 
 __________
 
+### 2018-02-21 — 06:05:46 UTC
+
+#### `CHANDIGARH`
+
+Thamodaran provided the script currently in use in CHANDIGARH. It had
+diverged from the reference script on GitHub.
+
+#### `MYSORE`
+
+Thamodaran provided the script currently in use in MYSORE. It had
+diverged from the reference script on GitHub.
+
+#### `NIMHANS`
+
+Thamodaran provided the script currently in use in NIMHANS with both the
+Philips and Siemens scanners. It had diverged from the reference script
+on GitHub.
+
+__________
+
 ### 2017-11-07 — 05:55:55 UTC
 
-#### `NIMHANS_00081500_AttendingPhysiciansName`
+#### `archives/NIMHANS_00081500_AttendingPhysiciansName`
 
 Script for the Philips scanner at NIMHANS.
 
@@ -22,7 +42,7 @@ __________
 
 ### 2017-01-24 — 15:37:39 UTC
 
-#### `MYSORE_NIMHANS_00104000_PatientComments`
+#### `archives/MYSORE_NIMHANS_00104000_PatientComments`
 
 Script for NIMHANS and MYSORE.
 * In the latest DICOM dataset from NIMHANS acquired on 2017-01-19, the PSC1
@@ -45,7 +65,7 @@ Script for NIMHANS and MYSORE.
   * (0020,4000) _ImageComments_,
   * (0040,0280) _CommentsOnPerformedProcedureStep_,
 
-#### `CHANDIGARH_00100020_PatientID`
+#### `archives/CHANDIGARH_00100020_PatientID`
 
 Specific script for CHANDIGARH.
 * Eventually DICOM tag (0010,0020) _PatientID_ appears to contain PSC1. Do not empty it anymore.
