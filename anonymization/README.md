@@ -34,7 +34,7 @@ __________
 
 ### 2017-11-07 — 05:55:55 UTC
 
-#### `archives/NIMHANS_00081500_AttendingPhysiciansName`
+#### `archives/2017-11-07_NIMHANS_00081500_AttendingPhysiciansName`
 
 Script for the Philips scanner at NIMHANS.
 
@@ -42,7 +42,7 @@ __________
 
 ### 2017-01-24 — 15:37:39 UTC
 
-#### `archives/MYSORE_NIMHANS_00104000_PatientComments`
+#### `archives/2017-01-24_MYSORE_NIMHANS_00104000_PatientComments`
 
 Script for NIMHANS and MYSORE.
 * In the latest DICOM dataset from NIMHANS acquired on 2017-01-19, the PSC1
@@ -65,7 +65,7 @@ Script for NIMHANS and MYSORE.
   * (0020,4000) _ImageComments_,
   * (0040,0280) _CommentsOnPerformedProcedureStep_,
 
-#### `archives/CHANDIGARH_00100020_PatientID`
+#### `archives/2017-01-14_CHANDIGARH_00100020_PatientID`
 
 Specific script for CHANDIGARH.
 * Eventually DICOM tag (0010,0020) _PatientID_ appears to contain PSC1. Do not empty it anymore.
