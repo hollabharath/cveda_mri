@@ -2,7 +2,7 @@ Acquisition centres run [DicomEditor][1] de-identification scripts to anonymize 
 before uploading them to the c-VEDA server.
 The syntax of these scripts is described in the [MIRC DICOM Anonymizer][2] page.
 Our strategy is to:
-* start with the default `dicom-anonymizer.script` provided with [DicomEditor][1],
+* start with the default `dicom-anonymizer.script` bundled with [DicomEditor][1],
   which is supposed to implement the `Basic Profile` described in [DICOM PS3.15][4],
   [Table E.1-1 Application Level Confidentiality Profile Attributes][5]
 * keep dates and time as described in column `Rtn. Long. Full Dates Opt.`,
@@ -14,6 +14,14 @@ History
 Since initial versions of the anoymization script were distributed by mail instead of being versioned,
 here is a brief history of all successive versions of the script. Dates and times refer to the moment
 anonymization scripts were distributed via mail (or otherwise committed to GitHub for newer versions).
+
+### 2018-03-12
+
+#### `DICOM-PS3.15E-Basic`
+
+The default `dicom-anonymizer.script` bundled with [DicomEditor][1] that is
+supposed to implement the `Basic Profile` described in [DICOM PS3.15][4],
+[Table E.1-1 Application Level Confidentiality Profile Attributes][5].
 
 __________
 
