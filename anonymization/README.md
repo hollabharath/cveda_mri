@@ -1,7 +1,12 @@
 Acquisition centres run [DicomEditor][1] de-identification scripts to anonymize DICOM files
 before uploading them to the c-VEDA server.
-
 The syntax of these scripts is described in the [MIRC DICOM Anonymizer][2] page.
+Our strategy is to:
+* start with the default `dicom-anonymizer.script` provided with [DicomEditor][1],
+  which is supposed to implement the `Basic Profile` described in [DICOM PS3.15][4],
+  [Table E.1-1 Application Level Confidentiality Profile Attributes][5]
+* keep dates and time as described in column `Rtn. Long. Full Dates Opt.`,
+* keep the attribute that holds the PSC1 code.
 
 History
 =======
@@ -105,3 +110,5 @@ Initial script for all acquisition centres.
 [1]: http://mircwiki.rsna.org/index.php?title=DicomEditor
 [2]: http://mircwiki.rsna.org/index.php?title=The_MIRC_DICOM_Anonymizer
 [3]: http://jpn.ca/vol38-issue2/38-2-84/
+[4]: http://dicom.nema.org/medical/dicom/current/output/html/part15.html
+[5]: http://dicom.nema.org/medical/dicom/current/output/html/part15.html#table_E.1-1
