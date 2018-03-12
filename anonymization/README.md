@@ -15,7 +15,33 @@ Since initial versions of the anoymization script were distributed by mail inste
 here is a brief history of all successive versions of the script. Dates and times refer to the moment
 anonymization scripts were distributed via mail (or otherwise committed to GitHub for newer versions).
 
-### 2018-03-12
+### 2018-03-12 — 14:00:00 UTC
+
+#### `CHANDIGARH`
+
+In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
+previous `CHANDIGARH` file. Make sure a few additional attributes are
+removed or kept and the PSC1 code is kept:
+* `(0010,0020)` *Patient ID*
+
+#### `MYSORE`
+
+In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
+previous `CHANDIGARH` file. Make sure a few additional attributes are
+removed or kept and the PSC1 code is kept:
+* `(0040,0280)` *Comments on the Performed Procedure Step*
+
+#### `NIMHANS`
+
+In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
+previous `CHANDIGARH` file. Make sure a few additional attributes are
+removed or kept and the PSC1 code is kept:
+* `(0010,4000)` *Patient Comments*
+* `(0032,4000)` *Study Comments*
+
+__________
+
+### 2018-03-12 — 12:00:00 UTC
 
 #### `DICOM-PS3.15E-Basic`
 
@@ -23,21 +49,27 @@ The default `dicom-anonymizer.script` bundled with [DicomEditor][1] that is
 supposed to implement the `Basic Profile` described in [DICOM PS3.15][4],
 [Table E.1-1 Application Level Confidentiality Profile Attributes][5].
 
+#### `DICOM-PS3.15E-FullDates`
+
+The default `dicom-anonymizer.script` modified as suggested in column
+`Rtn. Long. Full Dates Opt.` of [DICOM PS3.15][4],
+[Table E.1-1 Application Level Confidentiality Profile Attributes][5].
+
 __________
 
 ### 2018-02-21 — 06:05:46 UTC
 
-#### `CHANDIGARH`
+#### `archives/2018-02-21_CHANDIGARH`
 
 Thamodaran provided the script currently in use in CHANDIGARH. It had
 diverged from the reference script on GitHub.
 
-#### `MYSORE`
+#### `archives/2018-02-21_MYSORE`
 
 Thamodaran provided the script currently in use in MYSORE. It had
 diverged from the reference script on GitHub.
 
-#### `NIMHANS`
+#### `archives/2018-02-21_NIMHANS`
 
 Thamodaran provided the script currently in use in NIMHANS with both the
 Philips and Siemens scanners. It had diverged from the reference script
