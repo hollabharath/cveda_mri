@@ -3,8 +3,8 @@
  <p t="PROFILENAME">DICOM-PS3.15E-Basic</p>
  <p t="PROJECTNAME">C-VEDA_MRI</p>
  <p t="SHORTNAME">C-VEDA_MRI</p>
- <p t="SITEID">15</p>
- <p t="SITENAME">MYSORE</p>
+ <p t="SITEID">16</p>
+ <p t="SITENAME">NIMHANS</p>
  <p t="TRIALNAME">C-VEDA</p>
  <p t="UIDROOT">9999</p>
  <e en="T" t="00080005" n="SpecificCharacterSet">@keep()</e>
@@ -128,10 +128,10 @@
  <e en="F" t="00089209" n="AcquisitionContrast"></e>
  <e en="F" t="00089215" n="DerivationCodeSeq"></e>
  <e en="F" t="00089237" n="RefGrayscalePresentationStateSeq"></e>
- <e en="T" t="00100010" n="PatientName">@empty()</e>
- <e en="T" t="00100020" n="PatientID">@empty()</e>
+ <e en="T" t="00100010" n="PatientName">@hash(PatientID,10)</e>
+ <e en="T" t="00100020" n="PatientID">@hash(this,10)</e>
  <e en="T" t="00100021" n="IssuerOfPatientID">@remove()</e>
- <e en="T" t="00100030" n="PatientBirthDate">@empty()</e>
+ <e en="T" t="00100030" n="PatientBirthDate">@hashdate(this,PatientID)</e>
  <e en="T" t="00100032" n="PatientBirthTime">@remove()</e>
  <e en="T" t="00100040" n="PatientSex">@empty()</e>
  <e en="T" t="00100050" n="PatientInsurancePlanCodeSeq">@remove()</e>
@@ -165,7 +165,7 @@
  <e en="T" t="00102203" n="PatientSexNeutered">@remove()</e>
  <e en="T" t="00102297" n="ResponsiblePerson">@remove()</e>
  <e en="T" t="00102299" n="ResponsibleOrganization">@remove()</e>
- <e en="T" t="00104000" n="PatientComments">@remove()</e>
+ <e en="T" t="00104000" n="PatientComments">@keep()</e>
  <e en="F" t="00120010" n="ClinicalTrialSponsorName">@param(@TRIALSPONSOR)</e>
  <e en="F" t="00120020" n="ClinicalTrialProtocolID"></e>
  <e en="F" t="00120021" n="ClinicalTrialProtocolName"></e>
@@ -801,7 +801,7 @@
  <e en="T" t="00321060" n="RequestedProcedureDescription">@remove()</e>
  <e en="F" t="00321064" n="RequestedProcedureCodeSeq"></e>
  <e en="T" t="00321070" n="RequestedContrastAgent">@remove()</e>
- <e en="T" t="00324000" n="StudyComments">@remove()</e>
+ <e en="T" t="00324000" n="StudyComments">@keep()</e>
  <e en="F" t="00380004" n="RefPatientAliasSeq"></e>
  <e en="F" t="00380008" n="VisitStatusID"></e>
  <e en="T" t="00380010" n="AdmissionID">@remove()</e>
@@ -883,7 +883,7 @@
  <e en="F" t="00400260" n="PerformedProtocolCodeSeq"></e>
  <e en="F" t="00400270" n="ScheduledStepAttributesSeq"></e>
  <e en="T" t="00400275" n="RequestAttributesSeq">@remove()</e>
- <e en="T" t="00400280" n="PPSComments">@keep()</e>
+ <e en="T" t="00400280" n="PPSComments">@remove()</e>
  <e en="F" t="00400281" n="PPSDiscontinuationReasonCodeSeq"></e>
  <e en="F" t="00400293" n="QuantitySeq"></e>
  <e en="F" t="00400294" n="Quantity"></e>

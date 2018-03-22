@@ -15,6 +15,30 @@ Since initial versions of the anoymization script were distributed by mail inste
 here is a brief history of all successive versions of the script. Dates and times refer to the moment
 anonymization scripts were distributed via mail (or otherwise committed to GitHub for newer versions).
 
+### 2018-03-22 — 22:00:00 UTC
+
+#### `CHANDIGARH`
+
+Remove instead of hashing:
+* `(0010,0010)` *Patient Name*
+* `(0010,0030)` *Patient Birth Date*
+
+#### `MYSORE`
+
+Remove instead of hashing:
+* `(0010,0010)` *Patient Name*
+* `(0010,0020)` *Patient ID*
+* `(0010,0030)` *Patient Birth Date*
+
+#### `NIMHANS`
+
+Remove instead of hashing:
+* `(0010,0010)` *Patient Name*
+* `(0010,0020)` *Patient ID*
+* `(0010,0030)` *Patient Birth Date*
+
+__________
+
 ### 2018-03-12 — 14:00:00 UTC
 
 #### `CHANDIGARH`
