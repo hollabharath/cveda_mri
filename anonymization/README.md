@@ -15,24 +15,33 @@ Since initial versions of the anoymization script were distributed by mail inste
 here is a brief history of all successive versions of the script. Dates and times refer to the moment
 anonymization scripts were distributed via mail (or otherwise committed to GitHub for newer versions).
 
+### 2018-03-23 — 18:00:00 UTC
+
+#### `NIMHANS`
+
+Empty:
+* `(0008,1030)` *Study Description*
+
+__________
+
 ### 2018-03-22 — 22:00:00 UTC
 
 #### `CHANDIGARH`
 
-Remove instead of hashing:
+Empty instead of hashing:
 * `(0010,0010)` *Patient Name*
 * `(0010,0030)` *Patient Birth Date*
 
 #### `MYSORE`
 
-Remove instead of hashing:
+Empty instead of hashing:
 * `(0010,0010)` *Patient Name*
 * `(0010,0020)` *Patient ID*
 * `(0010,0030)` *Patient Birth Date*
 
-#### `NIMHANS`
+#### `archives/2018-03-22_NIMHANS`
 
-Remove instead of hashing:
+Empty instead of hashing:
 * `(0010,0010)` *Patient Name*
 * `(0010,0020)` *Patient ID*
 * `(0010,0030)` *Patient Birth Date*
@@ -41,21 +50,21 @@ __________
 
 ### 2018-03-12 — 14:00:00 UTC
 
-#### `CHANDIGARH`
+#### `archives/2018-03-12_CHANDIGARH`
 
 In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
 previous `CHANDIGARH` file. Make sure a few additional attributes are
 removed or kept and the PSC1 code is kept:
 * `(0010,0020)` *Patient ID*
 
-#### `MYSORE`
+#### `archives/2018-03-12_MYSORE`
 
 In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
 previous `CHANDIGARH` file. Make sure a few additional attributes are
 removed or kept and the PSC1 code is kept:
 * `(0040,0280)` *Comments on the Performed Procedure Step*
 
-#### `NIMHANS`
+#### `archives/2018-03-12_NIMHANS`
 
 In an attempt to standardize, merge vanilla `DICOM-PS3.15E-FullDates` and
 previous `CHANDIGARH` file. Make sure a few additional attributes are

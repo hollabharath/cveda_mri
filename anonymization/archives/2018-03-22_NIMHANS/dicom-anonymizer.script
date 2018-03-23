@@ -58,7 +58,7 @@
  <e en="F" t="0008010f" n="ContextIdentifier"></e>
  <e en="T" t="00080201" n="TimezoneOffsetFromUTC">@keep()</e>
  <e en="T" t="00081010" n="StationName">@keep()</e>
- <e en="T" t="00081030" n="StudyDescription">@empty()</e>
+ <e en="T" t="00081030" n="StudyDescription">@keep()</e>
  <e en="F" t="00081032" n="ProcedureCodeSeq"></e>
  <e en="T" t="0008103e" n="SeriesDescription">@keep()</e>
  <e en="T" t="00081040" n="InstitutionalDepartmentName">@remove()</e>
