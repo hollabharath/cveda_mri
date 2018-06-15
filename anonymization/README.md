@@ -26,7 +26,7 @@ __________
 
 ### 2018-03-22 — 22:00:00 UTC
 
-#### `CHANDIGARH`
+#### `PGIMER`
 
 Empty instead of hashing:
 * `(0010,0010)` *Patient Name*
@@ -94,7 +94,7 @@ __________
 
 #### `archives/2018-02-21_CHANDIGARH`
 
-Thamodaran provided the script currently in use in CHANDIGARH. It had
+Thamodaran provided the script currently in use in PGIMER. It had
 diverged from the reference script on GitHub.
 
 #### `archives/2018-02-21_MYSORE`
@@ -145,7 +145,7 @@ Script for NIMHANS and MYSORE.
 
 #### `archives/2017-01-14_CHANDIGARH_00100020_PatientID`
 
-Specific script for CHANDIGARH.
+Specific script for PGIMER.
 * Eventually DICOM tag (0010,0020) _PatientID_ appears to contain PSC1. Do not empty it anymore.
 
 __________
@@ -157,7 +157,7 @@ __________
 * Empty DICOM tag (0010,0020) _PatientID_.
 * The PSC1 code is supposed to be found in DICOM tag:
   * (0020,4000) _ImageComments_ at NIMHANS,
-  * perhaps (0010,21B0) _AdditionalPatientHistory_ at CHANDIGARH,
+  * perhaps (0010,21B0) _AdditionalPatientHistory_ at PGIMER,
   * perhaps (0040,0280) _CommentsOnPerformedProcedureStep_ at MYSORE.
 
 __________

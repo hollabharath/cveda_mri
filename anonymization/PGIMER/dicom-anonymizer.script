@@ -4,7 +4,7 @@
  <p t="PROJECTNAME">C-VEDA_MRI</p>
  <p t="SHORTNAME">C-VEDA_MRI</p>
  <p t="SITEID">11</p>
- <p t="SITENAME">CHANDIGARH</p>
+ <p t="SITENAME">PGIMER</p>
  <p t="TRIALNAME">C-VEDA</p>
  <p t="UIDROOT">9999</p>
  <e en="T" t="00080005" n="SpecificCharacterSet">@keep()</e>
