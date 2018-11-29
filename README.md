@@ -1,12 +1,13 @@
-Detailed imaging operations are documented in the c-VEDA MRI Standard Operating Procedure (SOP).
+Imaging operations are documented in the [cVEDA MRI Scanner Protocol](https://cveda.org/standard-operating-procedures/).
 
 Basic information is available from the [project wiki](https://github.com/cveda/cveda_mri/wiki).
 
-* `protocols`
+##### `protocols`
 
-  MRI protocols used by each acquisiton centres, when possible in the form of an EDX file for Siemens
-  scanners and an ExamCard for Philips scanner, and as a human-readable export in PDF or text format.
+MRI protocols used by each acquisiton centres, when possible in the form of an EDX file for Siemens
+scanners and an ExamCard for Philips scanner, and as a human-readable export in PDF or text format.
 
-* `anonymization`
+##### `anonymization`
 
-  [DicomEditor](http://mircwiki.rsna.org/index.php?title=DicomEditor) de-identification script applied to DICOM files after MRI acquisition and before pushing datasets to the c-VEDA upload server.
+[DicomEditor](http://mircwiki.rsna.org/index.php?title=DicomEditor) de-identification script applied
+to DICOM files after MRI acquisition and before pushing datasets to the c-VEDA upload server.
