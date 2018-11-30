@@ -11,3 +11,8 @@ scanners and an ExamCard for Philips scanner, and as a human-readable export in 
 
 [DicomEditor](http://mircwiki.rsna.org/index.php?title=DicomEditor) de-identification script applied
 to DICOM files after MRI acquisition and before pushing datasets to the c-VEDA upload server.
+
+##### `qc`
+
+QC procedure to be followed locally at each MRI acqusition centre, before uploading imaging datasets
+to the database.
