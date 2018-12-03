@@ -141,59 +141,59 @@ foreach sub ($argv)
 			-mask    $dwi/${ff}_mask.nii.gz \
 			-input   $dwi/${ff}.nii.gz
 		@djunct_4d_imager             		\
-			-inset  $dwi/${ff}.nii.gz 			\
+			-inset  $dwi/${ff}.nii.gz       \
 			-prefix $QC/${ff}
 		3dinfo -n4 -ad3 -tr -orient -prefix $dwi/${ff}.nii.gz > $QC/${ff}_info.txt
 	end
 	set rest4d = `ls $rest/rest*${sub}*.nii.gz` 
 	3dinfo -n4 -ad3 -tr -orient -prefix ${rest4d} > $QC/rest_${sub}_info.txt
 	3dTstat																				\
-		-tsnr -prefix $QC/rest_tsnr_${sub}.nii.gz		\
+		-tsnr -prefix $QC/rest_tsnr_${sub}.nii.gz   \
 		$rest4d
-	@chauffeur_afni                            		\
-		-ulay "$QC/rest_tsnr_${sub}.nii.gz"     		\
-	  -montx 20 -monty 1													\
-		-olay_off																		\
-		-prefix "$QC/tsnr_rest_${sub}"							\
-		-set_xhairs OFF															\
+	@chauffeur_afni                                     \
+		-ulay "$QC/rest_tsnr_${sub}.nii.gz"         \
+	  	-montx 20 -monty 1                          \
+		-olay_off                                   \
+		-prefix "$QC/tsnr_rest_${sub}"              \
+		-set_xhairs OFF                             \
 		-do_clean
-	imcat                                    			\
-		-ny 3                                				\
-	  -prefix $QC/rest_tsnr_${sub}.jpg     				\
+	imcat                                               \
+		-ny 3                                       \
+	  	-prefix $QC/rest_tsnr_${sub}.jpg            \
 		$QC/tsnr*axi* $QC/tsnr*cor* $QC/tsnr*sag*
 			rm $QC/tsnr*sag* 
 			rm $QC/tsnr*cor* 
 			rm $QC/tsnr*axi* 
-	3dTstat																				\
-		-stdev -prefix $QC/rest_tstd_${sub}.nii.gz	\
+	3dTstat                                             \
+		-stdev -prefix $QC/rest_tstd_${sub}.nii.gz  \
 		$rest4d
-	@chauffeur_afni                            		\
-		-ulay "$QC/rest_tstd_${sub}.nii.gz"     		\
-	  -montx 20 -monty 1                          \
-		-olay_off                          					\
-		-prefix "$QC/tstd_rest_${sub}"         			\
-		-set_xhairs OFF                   					\
+	@chauffeur_afni                                     \
+		-ulay "$QC/rest_tstd_${sub}.nii.gz"         \
+	  	-montx 20 -monty 1                          \
+		-olay_off                                   \
+		-prefix "$QC/tstd_rest_${sub}"              \
+		-set_xhairs OFF                             \
 		-do_clean
-	imcat                                    			\
-		-ny 3                                				\
-	  -prefix $QC/rest_tstd_${sub}.jpg     				\
+	imcat                                               \
+		-ny 3                                       \
+	  	-prefix $QC/rest_tstd_${sub}.jpg            \
 		$QC/tstd*axi* $QC/tstd*cor* $QC/tstd*sag*  
 			rm $QC/tstd*sag* 
 			rm $QC/tstd*cor*
 			rm $QC/tstd*axi* 
 	3dTstat																				\
-		-MASDx -prefix $QC/rest_masd_${sub}.nii.gz	\
+		-MASDx -prefix $QC/rest_masd_${sub}.nii.gz  \
 		$rest4d
-	@chauffeur_afni                            		\
-		-ulay "$QC/rest_masd_${sub}.nii.gz"     		\
+	@chauffeur_afni                                     \
+		-ulay "$QC/rest_masd_${sub}.nii.gz"         \
 	 	-montx 20 -monty 1                          \
-		-olay_off                          					\
-		-prefix "$QC/masd_rest_${sub}"         			\
-		-set_xhairs OFF                   					\
+		-olay_off                                   \
+		-prefix "$QC/masd_rest_${sub}"              \
+		-set_xhairs OFF                             \
 		-do_clean
-	imcat                                    			\
-		-ny 3                                				\
-	  -prefix $QC/rest_masd_${sub}.jpg     				\
+	imcat                                               \
+		-ny 3                                       \
+	  	-prefix $QC/rest_masd_${sub}.jpg            \
 		$QC/masd*axi* $QC/masd*cor* $QC/masd*sag* 
 			rm $QC/masd*sag* 
 			rm $QC/masd*cor* 
